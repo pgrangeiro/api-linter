@@ -1,6 +1,6 @@
 {
   "name": "@naturacosmeticos/api-linter",
-  "version": "1.0.0-beta",
+  "version": "1.4.3",
   "description": "A comprehensive API linter for swagger files following Natura Cosmeticos best practices",
   "main": "dist/index.js",
   "bin": {
@@ -36,6 +36,7 @@
     "yargs": "^15.1.0"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc && npm run cli:runnable",
     "lint": "tslint 'src/**/*.ts'",
     "cli:runnable": "chmod +x ./dist/cli.js",
